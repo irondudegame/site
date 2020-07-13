@@ -4,9 +4,14 @@
         <link rel="stylesheet" href="./css/style.css">
         <script>
             function sendEmail() {
-                alert("Please click on the link that will appear to send your appeal.");
-                document.getElementById("appeal").innerHTML = "Click here to send your appeal!";
-                document.getElementById("appeal").href = 'irondude.game@gmail.com?subject=Ban Appeal&body=' + text;
+                var f1 = document.getElementById("form1").value;
+                var f2 = document.getElementById("form2").value;
+                var f3 = document.getElementById("form3").value;
+                var f4 = document.getElementById("form4").value;
+                
+                var link = "mailto:irondude.game@gmail.com?subject=DIOBRAANDO APPEAL&body=APPEAL DATA: IGN: '" + f1 + "'; HOW: '" + f2 + "'; WHEN/WHO: '" + f3 + "'; REASON: '" + f4 + "'." : 
+                
+                alert("Please go to " + link + " to submit your appeal. Remember to click send so that we recieve your appeal.");
             }
         </script>
     </head>
