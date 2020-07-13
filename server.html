@@ -2,6 +2,13 @@
 <html>
     <head>
         <link rel="stylesheet" href="./css/style.css">
+        <script>
+            function sendEmail() {
+                alert("A window will popup. Please click send and your appeal will be sent.");
+                var txt = 'irondude.game@gmail.com?subject=Ban Appeal&body=' + text;
+                window.open(txt);
+            }
+        </script>
     </head>
     <body>
         <ul id="nav">
@@ -19,7 +26,13 @@
             <h3>Method 1: Discord</h3>
             <p>If you have access to the Discord, you may submit an appeal on <span class="channel"> #ban-appeal</span>. Remember to follow all the instructions and rules or your appeal will be rejected immediately. Don't appeal more than twice.</p>
             <h3>Method 2: Forms</h3>
-            <p>This method is currently in development.</p>
+            <form>
+                What is your IGN (username)? <input id="form1"></input><br>
+                How did you get banned? <input id="form2"></input><br>
+                When and who banned you? <input id="form3"></input><br>
+                Why should you be unbanned? <input id="form4"></input><br>
+                <button onclick="sendEmail()">Submit</button>
+            </form>
         </div>
         <br><br>
         <div id="main2">
