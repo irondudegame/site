@@ -4,9 +4,9 @@
         <link rel="stylesheet" href="./css/style.css">
         <script>
             function sendEmail() {
-                alert("A window will popup. Please click send and your appeal will be sent.");
-                var txt = 'irondude.game@gmail.com?subject=Ban Appeal&body=' + text;
-                window.location.href = txt;
+                alert("Please click on the link that will appear to send your appeal.");
+                document.getElementById("appeal").innerHTML = "Click here to send your appeal!";
+                document.getElementById("appeal").href = 'irondude.game@gmail.com?subject=Ban Appeal&body=' + text;
             }
         </script>
     </head>
@@ -32,6 +32,7 @@
                 When and who banned you? <input id="form3"></input><br>
                 Why should you be unbanned? <input id="form4"></input><br>
                 <button onclick="sendEmail()">Submit</button>
+                <a id="appeal"></a>
             </form>
         </div>
         <br><br>
