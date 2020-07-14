@@ -43,15 +43,21 @@ html {
 }
 
 .left {
-    width:40%;
-    left:5%;
-    position:relative;
+    left:0;
+    width:40%
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 20px;
 }
 
 .right {
-    width:40%;
-    left:55%;
-    position:relative;
+    right:0;
+    width:40%
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 20px;
 }
 
 button {
