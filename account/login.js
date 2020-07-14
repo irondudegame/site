@@ -43,6 +43,10 @@ function signup() {
     var password = document.getElementById("password").value;
     var success = document.getElementById("success");
     
+    if ((username == "") || (password == "")) {
+        return;
+    }
+    
     if (username.length < 4) {
         success.innerHTML = "Your username must be longer than 3 characters!";
     }
