@@ -25,7 +25,7 @@ function login() {
         if (username = logins[i]) {
             found = true;
             if (password = passwords[i]) {
-                // correct
+                window.location.href = "https://irondude.github.io/diobraando/account/profile";
             }
             else {
                 success.innerHTML = "Incorrect password!";
