@@ -1,5 +1,19 @@
-var logins = [];
-var passwords = [];
+// ADD LOGINS/PASSWORDS HERE
+
+var logins = ["iron"];
+var passwords = ["iron3141592653"];
+
+
+
+
+
+
+
+
+
+
+// DO NOT EDIT PAST THIS POINT
+
 
 function login() {
     var username = document.getElementById("username").value;
